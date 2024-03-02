@@ -13,6 +13,16 @@ O sistema deverá receber dois parâmetros via terminal que representarão dois 
 
 Abaixo segue a minha resolução:
 
+Primeiro fazemos o arquivo de Exceção como uma extensão de Exception, como abaixo:
+
+```java
+public class ParametrosInvalidosException extends Exception {
+
+}
+```
+
+Depois importamos a exceção para o nosso arquivo main através do throws:
+
 ```java
 import java.util.Scanner;
 
@@ -48,3 +58,15 @@ public class Contador {
     }
 }
 ```
+
+E por fim temos o nossos resultados.
+
+## Sem disparo da exceção
+
+![01](https://uploaddeimagens.com.br/images/004/750/779/original/01.jpg?1709387577)
+
+## Com disparo da exceção
+
+![02](https://uploaddeimagens.com.br/images/004/750/781/original/02.jpg?1709387652)
+
+...
